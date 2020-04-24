@@ -1,0 +1,289 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a { text-decoration: none;}
+ul { list-style-type: none;}
+
+body {
+  font-size: 18px;
+  font-family: 'Noto Sans', sans-serif;
+  min-width: 1200px;
+  color: #333;
+}
+/* 헤더 */
+.header_wrap {
+    box-shadow: 0px 1px 8px rgba(0,0,0,0.1);
+  }
+  
+  #main_header {
+    width: 1200px; height: 100px;
+    position: relative;
+    /* background: #ccc; */
+    margin: 0 auto;
+  
+  }
+  #main_header > h1 {
+    position: absolute;
+    left: 0; top: 20px;
+  }
+
+  /* 네비게이션 */
+  #gnb {
+    position: absolute;
+    margin-right: 40px;
+  }
+  #gnb > ul > li {
+    display: inline-block;
+   margin-right: 40px;
+  }
+  #gnb > ul > li:last-child { margin-right: 0;}
+  
+  #gnb > ul > li a { 
+
+    position: relative;
+    top: 35px;
+    left: 780px;
+    color: #88888b; 
+  }
+  #gnb > ul > li a:hover { color: #00a5e8;}
+
+  /* 비주얼 */
+  #visual {
+      position: relative;
+      height: 250px;
+      /* outline: 2px solid red; */
+      overflow: hidden;
+      
+  }
+  #visual > .visual-text {
+      position: absolute;
+      left: 890px; top: 110px; 
+      color: white;
+  }
+  #visual > .visual-text > h2 { font-size: 32px;}
+
+  /* lnb */
+  #lnb {
+      width: 1200px;
+      /* outline: 2px solid red; */
+      overflow: hidden;
+      background:#fff;
+     margin: 0 auto;
+     margin-top: 50px;
+  }
+  #lnb > a {
+    display: block;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: #555;
+  }
+  /* lnb 배경색 */
+  #lnb > a.selected {
+    background: #00a5e8;
+    color: #fff;
+  }
+  #lnb > a:hover {
+    background:#88cce7;
+    color: #fff;
+  }
+
+  /* 컨텐츠 */
+  #content {
+      width: 1200px;
+      clear: both;
+      position:relative;
+      /* outline: 2px solid red; */
+      margin: 0 auto;
+      margin-top: 50px;
+      overflow: hidden;
+      /* text-align: center; */
+
+  }
+  #content > .left { float: left;}
+  .content-text > h3 {
+    float: left;
+    margin-left: 50px;
+  }
+  .content-text > p {
+    font-size: 14px;
+    color: #000;
+    float: left;
+    margin-left: 50px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    
+    
+  }
+  #content > .content-text > b {
+     font-size: 14px;
+     float: left;
+     margin-left: 695px;
+     margin-top: -50px;
+    
+    }
+
+
+  /* 정보 */
+#content > .detail-info > table {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #000;
+    border-collapse: collapse;
+    border: 1px solid #f8f8f8;
+
+   
+    
+    
+
+}
+#content > .detail-info > table > caption { 
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#content > .detail-info > table, th, td {
+  font-size: 14px;
+  padding: 10px 30px;
+}
+#content > .detail-info > table th {
+   background-color: rgba(0,165,232,0.2);
+   color: #444;
+  }
+#content > .detail-info > table td {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 20px;
+    color: #444;
+
+}
+
+/* 연혁 */
+#content > .history > table {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #000;
+    border-collapse: collapse;
+    border: 1px solid #f8f8f8;
+   
+}
+#content > .history> table > caption { 
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#content > .history > table th {
+   background-color: rgba(0,165,232,0.2);
+   padding-right: 42px;
+   color: #444;
+  }
+#content > .history > table, th, td {
+   font-size: 14px;
+   padding: 10px 30px;
+  }
+#content > .history > table td {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 20px;
+    color: #444;
+}
+
+
+
+
+/* 푸터 */
+#main_footer {
+  width: 1200px;
+  height: 190px;
+  margin: 0 auto;
+  margin-top: 50px;
+  /* outline: 1px solid red; */
+  position: relative;
+  
+}
+#footer_menu {
+  width: 1200px;
+  height: 35px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #dddddd;
+  line-height: 35px;
+}
+.footer-container-full {
+  width: 1920px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #dddddd;
+}
+#footer_menu > ul > li {
+  display: inline;
+  margin: 0 auto;
+  
+ 
+}
+#footer_menu > ul > li:last-child {
+  font-weight: bold;
+}
+#footer_menu > ul > li a {
+  margin-left: 10px;
+  padding-right: 10px;
+  float: left;
+  color: #666;
+  font-size: 14px;
+
+}
+#footer_menu > .btn_top {
+  background-color: #444;
+  color: #fff;
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+
+}
+.footer_info {
+  /* outline: 1px solid red; */
+  height: 150px;
+  font-size: 15px;
+  padding-top: 20px;
+
+}
+
+.mb {
+  margin-bottom: 5px;
+  
+}
+/* 인라인블록한 이유 : span은 마진바텀, 탑 안먹어서 */
+.footer_info span {
+  display: inline-block;
+}
+.footer_info > img {
+  position: absolute;
+  left: 0; 
+  margin-top: 30px;
+ 
+}
+.footer_info > address {
+
+  margin-left: 250px;
+  padding-top: 10px;
+  font-style: normal;
+  color: #666;
+}
+.footer_info > p {
+  margin-left: 250px;
+  color: #666;
+
+}
+
+
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가치투자자문.html</title>
+     <!-- 구글웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 사용자 CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <!-- 사용자 자바스크립트 -->
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="header_wrap">
+        <!-- 헤더 -->
+        <header id="main_header">
+            <h1>
+                <a href="#">
+                    <img src="./images/logo.png" alt="logo">
+                </a>
+            </h1>
+            <nav id="gnb">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="https://ckwlswn.github.io/sub">About us</a></li>
+                    <li><a href="http://valueadvisors.co.kr/xe/Employee_List">What we do</a></li>
+                    <li><a href="http://valueadvisors.co.kr/xe/NEWS">Notice</a></li>
+                </ul>  
+            </nav>
+        </header>
+    </div>    
+    <!-- 메인비주얼 -->
+    <section id="visual"> 
+        <div class="img">
+            <img src="./images/main1.jpg" alt="visual">
+            <img src="./images/main2.jpg" alt="visual">
+            <img src="./images/main3.jpg" alt="visual">
+        </div>
+        <div class="container-full">
+            <div id="visual_pager">
+                <a class="selected" href="#" onclick="visual_change(1);">위대한 기업에 장기투자</a>
+                <a  href="#" onclick="visual_change(2);">Middle-down Approach</a>
+                <a  href="#" onclick="visual_change(3);">자산운용전문 투자자문회사</a>
+            </div>
+        </div>
+    </section>
+        
+    <section id="notice">
+        <div class="notice_container">
+            <ul>
+                <li>
+                    <p class="title">공지사항 <span> | </span></p>
+                    <p class="text">가치투자자문(주) 성과수수료 변경 안내</p>
+                    <p class="date">2020.04.21</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- what we do -->
+    <section id="operation">
+        <header>
+            <p>Value Investing Advisors<p>
+            <h2>What we do</h2>
+        </header>
+        <div class="row">
+            <div class="col">
+                <img src="./images/icon2.jpg" alt="">
+                <h3>투자철학, 윤리강령</h3>
+                <div class="cover">
+                    <img src="./images/icon2.png" alt="">
+                    <h3>투자철학, 윤리강령</h3>
+                    <p>가치투자자문의 투자에 대한 마음가짐과 
+                        <br>생각이 궁금하다면?</p>
+                    <a href="http://valueadvisors.co.kr/xe/Philosophy_Principle" class="btn">more +</a>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./images/icon3.jpg" alt="">
+                <h3>운용시스템</h3>
+                <div class="cover">
+                    <img src="./images/icon3.png" alt="">
+                    <h3>운용시스템</h3>
+                    <p>가치투자자문의 자산 운용방식에 대해 
+                        <br>자세히 알고싶다면?</p>
+                    <a href="http://valueadvisors.co.kr/xe/Investment_Process" class="btn">more +</a>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./images/icon4.jpg" alt="">
+                <h3>자문서비스</h3>
+                <div class="cover">
+                    <img src="./images/icon4.png" alt="">
+                    <h3>자문서비스</h3>
+                    <p>가치투자자문(주)의 '투자 일임 서비스'를 
+                        <br> 확인하고 싶다면?</p>
+                    <a href="http://valueadvisors.co.kr/xe/Consultation_Service" class="btn">more +</a>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <!-- 회사소개 -->
+    <div class="company-container-full">
+        <section id="company">
+            <header>
+                <h2>Aout us</h2>
+                <p>회사소개</p>
+            </header>
+            <div class="row">
+                <div class="col">
+                    <img src="./images/img1.png" alt="">
+                    <h3>회사개요</h3>
+                    <a class="btn" href="https://ckwlswn.github.io/sub">more +</a>
+                </div>
+                <div class="col">
+                    <img src="./images/img2.png" alt="">
+                    <h3>CEO 소개</h3>
+                    <a class="btn" href="http://valueadvisors.co.kr/xe/CEO_Introduction">more +</a>
+                </div>
+                <div class="col">
+                    <img src="./images/img3.png" alt="">
+                    <h3>재무현황</h3>
+                    <a class="btn" href="http://valueadvisors.co.kr/xe/Balance_Sheet">more +</a>
+                </div>
+            </div>
+        </section>  
+    </div>
+    <!-- 푸터 -->
+    <footer id="main_footer" >
+        <nav id="footer_menu" class="footer-container-full">
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">오시는길</a></li>
+            <li><a href="#">이메일무단수집거부</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+          </ul>
+          <a href="#" class="btn_top">top</a>
+        </nav>
+        <div class="footer_info">
+          <img src="images/logo.png" alt="footer logo">
+          <address>
+            <span class="mb"><b>가치투자자문</b></span><br>
+            <span>금융감독 인가 2003년 3월 7일</span>
+            <span>(투자자문 및 일임등록 : 등록번호 03-03-126)</span><br>
+            <span class="mb">서울특별시 영등포구 의사당대로 97, 13층(여의도동, 교보증권빌딩)</span>
+            <span>TEL : 02-780-3113</span>
+            <span>FAX : 02-780-3773</span><br>
+          </address>
+          <p class="copy">COPYRIGHT &copy; 2017.Value Investing Advisors. All rights reserved. Powered by MKH</p>
+        </div>
+      </footer>
+</body>
+</html>
